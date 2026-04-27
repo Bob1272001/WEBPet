@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEBPet™</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>WEBPet™</h1>
+      <p>Your browsing habits now have emotional consequences.</p>
+    </header>
+
+    <section class="layout">
+      <div class="card pet-panel">
+        <div class="pet-avatar-wrap">
+          <img id="petImage" src="images/Dog_Normal.png" alt="WEBPet" />
+          <div class="mood-bubble" id="moodBubble">🙂</div>
+        </div>
+
+        <div class="pet-name" id="petName">Leopold</div>
+        <div class="pet-status" id="petStatus">Dog</div>
+
+        <div class="webbar-area">
+          <span id="webValue">WEB™Bar: 60/100</span>
+          <div class="webbar-track">
+            <div class="webbar-fill" id="webFill"></div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button onclick="decreaseWebBar()">Use Google</button>
+          <button onclick="increaseWebBar()">Use Bing</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Adopt Pet</h2>
+        <button onclick="adoptPet(0)">Adopt Dog</button>
+        <button onclick="adoptPet(1)">Adopt Cat</button>
+        <button onclick="adoptPet(2)">Adopt Fish</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
